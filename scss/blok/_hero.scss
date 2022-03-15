@@ -1,0 +1,78 @@
+// ==================================SITE HERO ===========================
+.hero {
+  &__inner {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, rgba(50, 42, 39, 0) 0%, rgba(45, 40, 40, 0.85) 33.85%, #2D2828 49.48%, #2D2828 68.75%, #2D2828 82.29%, #2D2828 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: -15px 0px 15px rgba(0, 0, 0, 0.3);
+    width: 994px;
+    height: 1681px;
+    position: absolute;
+    z-index: 2;
+    top: 188px;
+    padding-top: 76px;
+    padding-bottom: 120px;
+    transform: translateX(12%);
+  }
+
+  &__content {
+    font-family: "Paytone One", sans-serif;
+    width: 432px;
+    margin-left: 67px;
+    margin-bottom: 79px;
+  }
+  &__heading {
+    @extend %heading-style;
+    @include textStyle(64px, 89px,#ffffff);
+    font-variant:small-caps;
+  }
+  &__last-heading {
+    @extend %heading-style;
+    @include textStyle(20px, 28px, #ffffff);
+    font-variant:small-caps;
+  }
+  &__text {
+    @extend %heading-style;
+    @include textStyle(18px, 149%, #ffffff);
+    margin-top: 30px;
+    margin-bottom: 34px;
+  }
+  &__input-email {
+    @include textStyle(14px, 18px, rgba(255, 255, 255, 0.4));
+    width: 291px;
+    height: 36px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    padding-left: 35px;
+    box-sizing: border-box;
+    border-radius: 50px;
+  }
+  &__button {
+    width: 123px;
+    height: 36px;
+    border: 2px solid #FF1640;
+    box-sizing: border-box;
+    border-radius: 50px;
+    @include textStyle(14px, 18px, rgba(255, 255, 255, 0.4));
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  &__hr {
+    width: 992px;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+.main {
+  position: static;
+  z-index: 3;
+  background-image: url(../../img/main-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}

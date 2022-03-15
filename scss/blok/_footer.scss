@@ -1,0 +1,68 @@
+.footer {
+  position: absolute;
+  top: 2355px;
+  right: 0;
+  left: 0;
+  z-index: 4;
+  background-image: url("../../img/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 306px;
+  padding-bottom: 111px;
+
+  &__inner {
+    @include flexStyle(center, space-between)
+  }
+  &__logo {
+    display: inline-block;
+  }
+  &__logo-img {
+    display: block;
+  }
+  &__lists {
+    @include flexStyle(center, space-between);
+    width:427px;
+  }
+
+  &__link {
+    text-align: right;
+  }
+  &__privacy {
+    display: block;
+    font-weight: 700;
+    @include textStyle(18px, 149%,#ffffff);
+  }
+  &__year {
+    display: block;
+    @include textStyle(18px, 149%,#ffffff);
+  }
+  &__text {
+    margin-top: 117px;
+    width: 410px;
+    height: 56px;
+    background-color: #ffffff;
+    @include textStyle(28px, 39px,#000000);
+    font-weight: 400;
+    font-variant: small-caps;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__ellips {
+    position: absolute;
+    bottom: 550px;
+    transform: translateY(-40px);
+    transform: translateX(563px);
+    display: inline-block;
+    width: 117px;
+    height: 117px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+  }
+}

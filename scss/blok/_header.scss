@@ -1,0 +1,28 @@
+// ============================HEADER===============================
+.header {
+  &__wrapper {
+    background-image: url(../../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 730px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__inner {
+    @include flexStyle(center, start)
+  }
+  
+  &__site-logo {
+    display: inline-block;
+  }
+  &__logo-img {
+    display: block;
+    width: 143px;
+    height: 59px;
+  }
+}
+

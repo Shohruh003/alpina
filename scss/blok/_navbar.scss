@@ -1,0 +1,228 @@
+.nav {
+  font-family: "Paytone One", sans-serif;
+  font-variant:small-caps;
+  &__list {
+    @include flexStyle(center, start);
+    @extend %list-style;
+    margin-left: 70px;
+  }
+  &__item {
+    margin-left: 30px;
+  }
+  &__link {
+    @include linkStyle(none, 18px, 25px, #ffffff);
+  }
+}
+.sitesList {
+  margin-top: 30px;
+  margin-left: 67px;
+  margin-right: 101px;
+  @include flexStyle(center, space-between);
+  @extend %list-style;
+}
+.marketingList {
+  @include flexStyle(center,  space-between);
+  @extend %list-style;
+  margin-bottom: 60px;
+  .first-item {
+    position: absolute;
+    z-index: 1;
+    left: 86px;
+  }
+  .second-item {
+    position: relative;
+    left: 273px;
+    bottom: 60px;
+    z-index: 2;
+  }
+  .third-item {
+    position: relative;
+    z-index: 1;
+    right: 19px;
+  }
+}
+
+.subjectList {
+  @extend %list-style;
+  margin-top: 65px;
+  &__item {
+    @include flexStyle(center, space-between);
+    margin-bottom: 94px;
+  }
+  &__unread {
+    font-weight: bold;
+    @include textStyle(18px, 149%,#ffffff);
+    &::before {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      content: "1";
+      @include textStyle(18px, 149%,#ffffff);
+      border: 1px solid #ffffff;
+      text-align: center;
+      background-color: #ff0000;
+      border-radius: 50%;
+      margin-right: 9px;
+    }
+  }
+  &__notifications {
+    @include flexStyle(center, space-between);
+    width: 453px;
+    margin-bottom: 25px;
+  }
+  &__button {
+    width: 131px;
+    height: 35px;
+    background-color:#c4c4c4;
+    border-radius: 50px;
+    @include flexStyle(center, space-around);
+  }
+  
+  &__span {
+    @include textStyle(16px, 149%,#2D2828);
+    font-weight: 600;
+  }
+
+  &__about {
+    @include flexStyle(center, start);
+    width: 453px;
+    height: 128px;
+    background-color: #B5B6B8;
+  }
+  &__nameDiv {
+    margin-left: 17px;
+  }
+  &__nameImg {
+    margin-left: 17px;
+  }
+  &__name {
+    display: block;
+    font-weight: 600px;
+    @include textStyle(16px, 149%,#2D2828);
+  }
+  &__time {
+    display: block;
+    @include textStyle(18px, 149%,#2D2828);
+  }
+  &__showcasing {
+    width: 220px;
+    margin-left: 30px;
+  }
+  &__heading {
+    margin: 0;
+    font-weight: bold;
+    @include textStyle(22px, 149%,#2D2828); 
+  }
+  &__text {
+    margin: 0;
+    @include textStyle(14px, 149%,#2D2828); 
+  }
+  &__recent {
+    font-weight: bold;
+    @include textStyle(18px, 149%,#ffffff);
+  }
+  &__img {
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  &__start {
+    width: 290px;
+  }
+  &__startHeading {
+    margin: 0;
+    margin-bottom: 19px;
+    @include textStyle(22px, 149%,rgba(255, 255, 255,0.7));
+  }
+  &__startText {
+    margin: 0;
+    @include textStyle(14px, 149%,rgba(255, 255, 255,0.7));
+  }
+}
+
+.charactersList {
+  @extend %list-style;
+  @include flexStyle(center, space-evenly);
+  width: 842px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutList {
+  @extend %list-style;
+  display: flex;
+  justify-content: space-between;
+  width: 842px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__item {
+    width: 268px;
+  }
+  &__imgDiv {
+    @include flexStyle(center, start);
+    margin-bottom: 21px;
+  }
+  &__link {
+    margin: 0;
+    padding: 0;
+  }
+  &__img {
+    margin-left: 16px;
+  }
+  &__text {
+    margin: o;
+    @include textStyle(18px, 149%,#000000);
+    font-weight: 600;
+  }
+}
+
+.exploreList {
+  @extend %list-style;
+  text-align: left;
+  &__heading {
+    margin: 0;
+    margin-bottom: 22px;
+    font-weight: 700;
+    @include textStyle(18px, 149%,#ffffff);
+    font-variant: small-caps;
+  }
+  &__link {
+    @include linkStyle (none,18px, 149%, #ffffff)
+  }
+}
+
+.recourcesList {
+  @extend %list-style;
+  text-align: left;
+  &__heading {
+    margin: 0;
+    margin-bottom: 22px;
+    font-weight: 700;
+    @include textStyle(18px, 149%,#ffffff);
+    font-variant: small-caps;
+  }
+  &__link {
+    @include linkStyle (none,18px, 149%, #ffffff)
+  }
+}
+
+.companyList {
+  @extend %list-style;
+  text-align: left;
+  &__heading {
+    margin: 0;
+    margin-bottom: 22px;
+    font-weight: 700;
+    @include textStyle(18px, 149%,#ffffff);
+    font-variant: small-caps;
+  }
+  &__link {
+    @include linkStyle (none,18px, 149%, #ffffff)
+  }
+}
+.linkList {
+  @extend %list-style;
+  @include flexStyle(center, space-between);
+  width: 219px;
+  padding-left: 80px;
+}
